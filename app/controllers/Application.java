@@ -4,7 +4,6 @@ import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.Alumni;
 import views.html.Contactus;
-import views.html.Contactus$;
 import views.html.Faculty;
 import views.html.Index;
 import views.html.Student;
