@@ -26,8 +26,17 @@ public class IntegrationTest {
         browser.goTo("http://localhost:3333");
         assertThat(browser.pageSource()).contains("home page");
 
-        browser.goTo("http://localhost:3333/page1");
-        assertThat(browser.pageSource()).contains("Page1");
+        browser.goTo("http://localhost:3333/Students");
+        assertThat(browser.pageSource()).contains("Students");
+
+        browser.goTo("http://localhost:3333/Faculty");
+        assertThat(browser.pageSource()).contains("home page");
+
+        browser.goTo("http://localhost:3333/Alumni");
+        assertThat(browser.pageSource()).contains("home page");
+
+        browser.goTo("http://localhost:3333/Contactus");
+        assertThat(browser.pageSource()).contains("home page");
       }
     });
   }

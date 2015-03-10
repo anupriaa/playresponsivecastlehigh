@@ -4,7 +4,7 @@
 
 <html>
   <head>
-    <title>@page (ics-play-bootstrap)</title>
+    <title>Play Responsive Castle High</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
@@ -19,9 +19,10 @@
         <![endif]-->
   </head>
   <body>
-
+    <div class="topimg" >
+    </div>
       <!-- Responsive navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-inverse " role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -32,8 +33,12 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
+            @*<li class="@("active".when(page == "Home"))"><a href="@routes.Application.index()">Home</a></li>*@
             <li class="@("active".when(page == "Home"))"><a href="@routes.Application.index()">Home</a></li>
-            <li class="@("active".when(page == "Page1"))"><a href="@routes.Application.page1()">Page1</a></li>
+            <li class="@("active".when(page == "Student"))"><a href="@routes.Application.Student()">Students/Parents</a></li>
+            <li class="@("active".when(page == "Faculty"))"><a href="@routes.Application.Faculty()">Faculty/Staff</a></li>
+            <li class="@("active".when(page == "Alumni"))"><a href="@routes.Application.Alumni()">Alumni/Friends</a></li>
+            <li class="@("active".when(page == "Contactus"))"><a href="@routes.Application.Contactus()">Contact Us</a></li>
           </ul>
         </div>
       </div>

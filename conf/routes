@@ -4,7 +4,10 @@
 
 # Home page
 GET     /                           controllers.Application.index()
-GET     /page1                      controllers.Application.page1()
+GET     /Student                          controllers.Application.Student()
+GET     /Faculty                          controllers.Application.Faculty()
+GET     /Alumni                       controllers.Application.Alumni()
+GET     /Contactus                       controllers.Application.Contactus()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
